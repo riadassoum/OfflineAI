@@ -1,0 +1,15 @@
+addon/doc/*.css
+addon/doc/en/
+*_docHandler.py
+addon/doc/**/*.html
+manifest.ini
+*.mo
+*.py[co]
+__pycache__/
+*.nvda-addon
+.sconsign.dblite
+/[0-9]*.[0-9]*.[0-9]*.json
+*.egg-info
+*-merge.pot
+# The developer's own settings must never be committed again.
+addon/globalPlugins/offlineAI/offlineAI_config.json

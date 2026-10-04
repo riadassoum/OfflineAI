@@ -1,0 +1,2 @@
+scons>=4.9
+Markdown>=3.7
