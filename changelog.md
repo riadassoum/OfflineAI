@@ -1,10 +1,9 @@
-# Offline AI 1.0
+# Offline AI 1.0.1
 
-First official release.
+- Cancelled model downloads retain their partial files and can resume when the server supports range requests (#7).
+- Clarified CPU, GPU and NPU hardware support (#6).
+- Updated build automation dependencies (#2, #5).
 
-- Chat with local GGUF language models, with a built-in catalogue, HuggingFace search and custom models.
-- Quick actions on selected text: translate into your own or any other language, summarise, proofread, explain, plus ten custom actions.
-- Dictation and transcription with Whisper in about 100 languages, with TXT, SRT and VTT export and batch transcription.
-- OCR and image description for the screen, image files, clipboard images and PDFs.
-- Text to speech with voice cloning.
-- Everything runs offline on the CPU; the interface is fully translatable.
+Thank you @animeshahilya for the download fix and hardware documentation, and Dependabot for dependency updates.
+
+Validation: simulated cancellation and range-resume test passed. Interactive Windows/NVDA testing was not performed for this maintenance release.
