@@ -22,7 +22,7 @@ The add-on is built for screen reader users of every language. It follows the la
 
 1. Open the NVDA menu, Tools, **Offline AI...**.
 2. Choose a model in the Model list. Each entry says how big the download is and how much memory it needs. If you are unsure, start with a small one (0.5B to 2B); for languages other than English, the entries in the **Multilingual** category are the best choice, and "Gemma 3 4B" is a good all-rounder.
-3. Press **Download model**. A progress window reports percentage, speed and time remaining, and announces every ten percent. If the connection drops, press Download again and it continues from where it stopped.
+3. Press **Download model**. A progress window reports percentage, speed and time remaining, and announces every ten percent. If you cancel or the connection drops, press Download again to resume when the server supports it.
 4. Type a question in **Your query** and press **Send**.
 
 No keys are assigned by default, so nothing can conflict with your other add-ons. Assign the ones you want in NVDA menu, Preferences, Input Gestures, under the **Offline AI** category. The **Quick Launcher** command is a good first one: it opens a searchable list of everything the add-on can do.
@@ -125,10 +125,9 @@ Settings and history therefore survive add-on updates. The Settings window can e
 
 Everything runs on the CPU. A model needs roughly its file size in free memory, plus a little. With memory-mapping on (the default), Windows can run a model that is somewhat larger than your free memory by paging it from disk, at reduced speed. The benchmark in Settings tells you what size of model your processor handles comfortably.
 
-GPUs and NPUs: the bundled engines are CPU-only builds, so a discrete GPU or an NPU (such as Intel AI Boost) sits idle by default. Two things worth knowing:
+The bundled engines run on the CPU; GPU and NPU acceleration is not supported in this release. GPU-enabled builds of llama.cpp can run compatible GGUF models on some systems, but replacing the bundled binaries is unsupported and may require additional configuration. Hardware support and performance depend on the backend, drivers, model and available memory. Other frameworks can use NPUs for some AI workloads, but this add-on does not currently provide NPU acceleration.
 
-* A dedicated GPU *can* run these same GGUF models much faster through a GPU-enabled llama.cpp build (for example the official Windows Vulkan, CUDA, SYCL or OpenVINO builds, which accept the same `-ngl` layer-offload flag and the same model files). That requires swapping the bundled binaries, so it is currently a manual, unsupported setup.
-* An NPU does *not* help with chat models: llama.cpp has no NPU backend, and NPUs lack the memory bandwidth autoregressive decoding needs. Where an NPU can help is the smaller audio/vision pieces (Whisper transcription, image-encoder steps) through frameworks such as OpenVINO — a possible future direction, not something this release uses.
+Thanks to [@animeshahilya](https://github.com/animeshahilya) for contributing hardware notes and resumable cancelled downloads.
 
 ## Translating the add-on
 
