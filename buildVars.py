@@ -26,10 +26,10 @@ Translate, summarise, proofread or explain any selected text with a keystroke, i
 All engines are bundled and run on the CPU. Models are downloaded on demand and stored outside the add-on, so they survive updates.
 Open it from the NVDA Tools menu, or assign keys in Input Gestures under the Offline AI category."""),
 	# version
-	addon_version="1.0",
+	addon_version="1.0.1",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""First official release."""),
+	addon_changelog=_("""Cancelled downloads can resume. Hardware documentation clarified. Build dependencies updated."""),
 	# Author(s)
 	addon_author="Riad Assoum",
 	# URL for the add-on documentation support
