@@ -125,6 +125,11 @@ Settings and history therefore survive add-on updates. The Settings window can e
 
 Everything runs on the CPU. A model needs roughly its file size in free memory, plus a little. With memory-mapping on (the default), Windows can run a model that is somewhat larger than your free memory by paging it from disk, at reduced speed. The benchmark in Settings tells you what size of model your processor handles comfortably.
 
+GPUs and NPUs: the bundled engines are CPU-only builds, so a discrete GPU or an NPU (such as Intel AI Boost) sits idle by default. Two things worth knowing:
+
+* A dedicated GPU *can* run these same GGUF models much faster through a GPU-enabled llama.cpp build (for example the official Windows Vulkan, CUDA, SYCL or OpenVINO builds, which accept the same `-ngl` layer-offload flag and the same model files). That requires swapping the bundled binaries, so it is currently a manual, unsupported setup.
+* An NPU does *not* help with chat models: llama.cpp has no NPU backend, and NPUs lack the memory bandwidth autoregressive decoding needs. Where an NPU can help is the smaller audio/vision pieces (Whisper transcription, image-encoder steps) through frameworks such as OpenVINO — a possible future direction, not something this release uses.
+
 ## Translating the add-on
 
 The file `offlineAI.pot` in the repository contains every message. Copy it to `addon/locale/<your language code>/LC_MESSAGES/nvda.po`, translate it with Poedit or any text editor, and send it as a pull request. Prompts sent to the models are deliberately not translatable: they are instructions for the model, and they already name the language the answer must be in.
