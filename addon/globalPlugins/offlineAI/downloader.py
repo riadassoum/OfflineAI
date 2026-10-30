@@ -138,6 +138,8 @@ def _worker(url, dest, dlg, on_done):
 	start = time.time()
 	lastPct = 0
 	lastUi = 0.0
+	done = 0
+	total = 0
 	try:
 		d = os.path.dirname(dest)
 		if d and not os.path.isdir(d):
@@ -198,12 +200,16 @@ def _worker(url, dest, dlg, on_done):
 		os.replace(tmp, dest)
 		wx.CallAfter(_finish, dlg, on_done, True, None)
 	except _Cancelled:
-		try:
-			if os.path.isfile(tmp):
-				os.remove(tmp)
-		except OSError:
-			pass
-		wx.CallAfter(_finish, dlg, on_done, False, _("Cancelled."))
+		# Keep the partial file: pressing Download again resumes from it
+		# instead of starting a multi-GB download over (same as an
+		# interrupted connection; stale partials are still handled by the
+		# 416 branch above).
+		if total > 0 and done < total:
+			msg = _("Cancelled at {p} percent; press Download again to resume.").format(
+				p=int(done * 100 / total))
+		else:
+			msg = _("Cancelled.")
+		wx.CallAfter(_finish, dlg, on_done, False, msg)
 	except Exception as e:
 		log.warning("offlineAI download failed: %s" % e)
 		wx.CallAfter(_finish, dlg, on_done, False, str(e))
