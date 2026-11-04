@@ -1,11 +1,13 @@
 # Offline AI
 
+[العربية — دليل الاستخدام الكامل](https://github.com/riadassoum/OfflineAI/blob/main/addon/doc/ar/readme.md)
+
 * Author: Riad Assoum
 * Repository: <http://github.com/riadassoum/offlineai>
 * NVDA compatibility: 2026.1 and later (64-bit)
 * License: GNU GPL version 2
 
-Offline AI brings local artificial intelligence to NVDA. Language models, speech recognition, image reading and voice synthesis all run on your own processor. There is no separate Python to install, no command line, no account, and not one byte of your text, audio or images leaves the computer. The internet is used only when you choose to download a model.
+Offline AI brings local artificial intelligence to NVDA. Language models, speech recognition, image reading and voice synthesis all run on your own processor. There is no separate Python to install, no command line, no account, and not one byte of your text, audio or images leaves the computer. Internet access is used for model searches, download-link checks, downloads and remote catalog refreshes that you request.
 
 The add-on is built for screen reader users of every language. It follows the language NVDA is set to, lets you translate into any language, recognises speech in about 100 languages, and its whole interface can be translated.
 

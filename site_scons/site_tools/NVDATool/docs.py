@@ -1,4 +1,5 @@
 import gettext
+import re
 from pathlib import Path
 
 import markdown
@@ -40,11 +41,17 @@ def md2html(
 	for k, v in headerDic.items():
 		mdText = mdText.replace(k, v, 1)
 	htmlText = markdown.markdown(mdText, extensions=mdExtensions)
+	# Keep relative Markdown links usable both on GitHub and in offline HTML.
+	def localDocLink(match):
+		if (source.parent / (match[1] + ".md")).is_file():
+			return f'href="{match[1]}.html{match[2] or ""}"'
+		return match[0]
+	htmlText = re.sub(r'href="([^":]+)\.md(#[^"]*)?"', localDocLink, htmlText)
 	# Optimization: build resulting HTML text in one go instead of writing parts separately.
 	docText = "\n".join(
 		(
 			"<!DOCTYPE html>",
-			f'<html lang="{lang}">',
+			f'<html lang="{lang}" dir="{"rtl" if lang.split("-")[0] in ("ar", "fa", "he", "ur") else "ltr"}">',
 			"<head>",
 			'<meta charset="UTF-8">',
 			'<meta name="viewport" content="width=device-width, initial-scale=1.0">',

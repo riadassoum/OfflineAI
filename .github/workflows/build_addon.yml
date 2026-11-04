@@ -20,8 +20,14 @@ jobs:
         sudo apt-get update -y
         sudo apt-get install -y gettext
         pip install -r requirements-build.txt
+    - name: Regression tests
+      run: python -m unittest discover -s tests -v
     - name: Build add-on and translation template
-      run: scons && scons pot
+      run: |
+        scons
+        scons pot
+        msgfmt --check --check-format -o /tmp/offlineAI-ar.mo addon/locale/ar/LC_MESSAGES/nvda.po
+        python tests/check_translation.py
     - uses: actions/upload-artifact@v7
       with:
         name: packaged_addon

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: offlineAI 1.0\n"
+"Project-Id-Version: offlineAI 1.0.2\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2026-10-04 20:17+0000\n"
+"POT-Creation-Date: 2026-11-05 00:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,385 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#. Translators: title of a saved chat that has no text yet.
+#: addon/globalPlugins/offlineAI/history.py:75
+msgid "Untitled chat"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/history.py:128
+#: addon/globalPlugins/offlineAI/history.py:136
+msgid "You:"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/history.py:128
+#: addon/globalPlugins/offlineAI/history.py:136
+msgid "AI:"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/inference.py:370
+#: addon/globalPlugins/offlineAI/__init__.py:1741
+msgid "[Reasoning done] "
+msgstr ""
+
+#. Translators: language choice meaning "detect the language automatically".
+#: addon/globalPlugins/offlineAI/langs.py:111
+#: addon/globalPlugins/offlineAI/__init__.py:3267
+msgid "Automatic (detect)"
+msgstr ""
+
+#. Translators: short descriptions of Whisper speech recognition models.
+#: addon/globalPlugins/offlineAI/whisper_ui.py:27
+msgid "fastest, lower accuracy"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:28
+msgid "fast"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:29
+msgid "balanced, small download"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:30
+msgid "balanced"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:31
+msgid "recommended: accurate and quick"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:32
+msgid "accurate"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:33
+msgid "accurate, faster than Large"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:34
+msgid "most accurate, slowest"
+msgstr ""
+
+#. Translators: file type filter in the "open audio" dialog.
+#: addon/globalPlugins/offlineAI/whisper_ui.py:41
+msgid "Media files"
+msgstr ""
+
+#. Translators: file type filter.
+#: addon/globalPlugins/offlineAI/whisper_ui.py:45
+#: addon/globalPlugins/offlineAI/__init__.py:1944
+#: addon/globalPlugins/offlineAI/__init__.py:3037
+#: addon/globalPlugins/offlineAI/__init__.py:3589
+msgid "All files"
+msgstr ""
+
+#. Translators: title of the speech-to-text window.
+#: addon/globalPlugins/offlineAI/whisper_ui.py:62
+msgid "Offline AI - Transcribe speech"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:79
+msgid "&Whisper model:"
+msgstr ""
+
+#. Translators: the language spoken in the recording.
+#: addon/globalPlugins/offlineAI/whisper_ui.py:88
+msgid "Spoken &language:"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:94
+msgid "Translate to &English while transcribing"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:98
+#: addon/globalPlugins/offlineAI/__init__.py:1291
+#: addon/globalPlugins/offlineAI/__init__.py:1428
+msgid "&Download model"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:101
+msgid "Delete &model file"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:104
+msgid "&Open audio/video file(s)..."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:107
+msgid "&Batch transcribe to files..."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:113
+msgid "No file chosen."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:116
+msgid "&Transcribe"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:120
+msgid "&Stop"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:127
+msgid "Transcr&ipt:"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:132
+msgid "Save as T&XT..."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:134
+msgid "Save as S&RT..."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:136
+msgid "Save as &VTT..."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:143
+#: addon/globalPlugins/offlineAI/__init__.py:840
+#: addon/globalPlugins/offlineAI/__init__.py:1363
+#: addon/globalPlugins/offlineAI/__init__.py:2208
+#: addon/globalPlugins/offlineAI/__init__.py:2658
+#: addon/globalPlugins/offlineAI/__init__.py:2905
+msgid "&Close"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:162
+#: addon/globalPlugins/offlineAI/__init__.py:1386
+#: addon/globalPlugins/offlineAI/__init__.py:3280
+msgid " [downloaded]"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:207
+msgid "Download the selected Whisper model first."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:228
+#: addon/globalPlugins/offlineAI/__init__.py:1617
+msgid "Model already downloaded."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:237
+#: addon/globalPlugins/offlineAI/__init__.py:1626
+msgid "Download complete."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:238
+#: addon/globalPlugins/offlineAI/__init__.py:1627
+#: addon/globalPlugins/offlineAI/__init__.py:3096
+#: addon/globalPlugins/offlineAI/__init__.py:3103
+#, python-brace-format
+msgid "Download failed: {e}"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:247
+#, python-brace-format
+msgid ""
+"Delete the downloaded file for {n} ({s})? You can download it again later."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:249
+#: addon/globalPlugins/offlineAI/__init__.py:1449
+#: addon/globalPlugins/offlineAI/__init__.py:1460
+msgid "Delete model"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:256
+#: addon/globalPlugins/offlineAI/__init__.py:1454
+msgid "Model file deleted."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:258
+#: addon/globalPlugins/offlineAI/__init__.py:1456
+#, python-brace-format
+msgid "Could not delete the file: {e}"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:275
+msgid "Audio format"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:279
+msgid "Choose one or more audio or video files"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:287
+#, python-brace-format
+msgid "File: {n}"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:288
+#, python-brace-format
+msgid "Chosen {n}. Press Transcribe."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:292
+#, python-brace-format
+msgid ""
+"{n} files chosen. Press Transcribe to write a transcript file next to each "
+"one."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:302
+msgid "Choose the audio or video files to transcribe"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:307
+#, python-brace-format
+msgid "{n} files chosen for batch transcription."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:316
+#: addon/globalPlugins/offlineAI/__init__.py:1635
+#: addon/globalPlugins/offlineAI/__init__.py:2703
+#: addon/globalPlugins/offlineAI/__init__.py:2962
+msgid "Stopping."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:325
+msgid "Choose a file first with the Open button."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:338
+msgid "Transcribing. This can take a while."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:347
+#, python-brace-format
+msgid "The speech engine could not be loaded: {e}"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:358
+#: addon/globalPlugins/offlineAI/__init__.py:591
+#: addon/globalPlugins/offlineAI/__init__.py:1707
+#: addon/globalPlugins/offlineAI/__init__.py:3799
+#, python-brace-format
+msgid "Could not load the model: {e}"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:364
+msgid ""
+"FFmpeg is required for this file format. Convert it to WAV, MP3, FLAC or "
+"OGG, or install FFmpeg."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:391
+#, python-brace-format
+msgid "Transcription error: {e}"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:427
+msgid ""
+"Transcription complete. Press Space or Enter in the transcript to play the "
+"audio for the current segment."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:430
+msgid "No speech was transcribed."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:458
+msgid "No audio segment here."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:471
+msgid "No audio for the selection."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:477
+msgid "Could not load the audio for playback."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:496
+msgid "Playback failed."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:508
+msgid ""
+"Each transcript is saved next to its audio file, with the same name. Choose "
+"the format:"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:510
+msgid "Batch transcription"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:511
+msgid "Text (.txt)"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:511
+msgid "SubRip subtitles (.srt)"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:511
+msgid "WebVTT subtitles (.vtt)"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:527
+#, python-brace-format
+msgid "Batch transcription started for {n} files."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:549
+#, python-brace-format
+msgid "{i} of {t}: transcribing {n}"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:562
+#, python-brace-format
+msgid "Saved {o}"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:565
+#, python-brace-format
+msgid "Skipped {n}: {e}"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:575
+#, python-brace-format
+msgid ""
+"Batch complete. {d} of {t} files transcribed. The transcripts are saved next "
+"to the original files; details are in the transcript box."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:583
+msgid "Nothing to save yet."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:586
+msgid "Text file"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:587
+msgid "SubRip subtitles"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:588
+msgid "WebVTT subtitles"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:591
+msgid "Save transcript"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:600
+#: addon/globalPlugins/offlineAI/__init__.py:2033
+#: addon/globalPlugins/offlineAI/__init__.py:2451
+#: addon/globalPlugins/offlineAI/__init__.py:2838
+#, python-brace-format
+msgid "Saved {n}"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/whisper_ui.py:603
+#: addon/globalPlugins/offlineAI/__init__.py:2036
+#: addon/globalPlugins/offlineAI/__init__.py:2840
+#, python-brace-format
+msgid "Could not save: {e}"
+msgstr ""
 
 #: addon/globalPlugins/offlineAI/ocr.py:101
 msgid "PDF support is unavailable."
@@ -26,7 +405,7 @@ msgid "Invalid page range."
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/ocr.py:372
-#: addon/globalPlugins/offlineAI/__init__.py:3531
+#: addon/globalPlugins/offlineAI/__init__.py:3530
 msgid "The OCR engine is not installed."
 msgstr ""
 
@@ -62,40 +441,141 @@ msgstr ""
 msgid "Could not render page."
 msgstr ""
 
-#. Translators: language choice meaning "detect the language automatically".
-#: addon/globalPlugins/offlineAI/langs.py:111
-#: addon/globalPlugins/offlineAI/__init__.py:3268
-msgid "Automatic (detect)"
+#: addon/globalPlugins/offlineAI/tables.py:75
+#, python-brace-format
+msgid "Column {n}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/audio_decode.py:82
+#: addon/globalPlugins/offlineAI/tables.py:77
+#, python-brace-format
+msgid "Row {n} - "
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/downloader.py:47
+#, python-brace-format
+msgid "Downloading {n}"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/downloader.py:55
+msgid "&Cancel"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/downloader.py:64
+msgid "Cancelling..."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/downloader.py:72
 #, python-brace-format
 msgid ""
-"This format ({e}) needs FFmpeg, which was not found. MP3, FLAC, OGG and WAV "
-"work without it."
+"{pct:.0f} percent - {done} of {total}\n"
+"Speed: {speed}/s\n"
+"Elapsed: {el}   Remaining: {rem}"
 msgstr ""
 
-#. Translators: title of a saved chat that has no text yet.
-#: addon/globalPlugins/offlineAI/history.py:75
-msgid "Untitled chat"
+#: addon/globalPlugins/offlineAI/downloader.py:80
+#, python-brace-format
+msgid ""
+"{done} downloaded\n"
+"Speed: {speed}/s\n"
+"Elapsed: {el}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/history.py:128
-#: addon/globalPlugins/offlineAI/history.py:136
-msgid "You:"
+#: addon/globalPlugins/offlineAI/downloader.py:194
+#, python-brace-format
+msgid "{p} percent"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/history.py:128
-#: addon/globalPlugins/offlineAI/history.py:136
-msgid "AI:"
+#. The connection dropped. Keep the partial file for resuming.
+#: addon/globalPlugins/offlineAI/downloader.py:197
+#, python-brace-format
+msgid ""
+"the connection was interrupted at {p} percent; press Download again to resume"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/backup.py:58
-msgid "This does not look like an Offline AI backup."
+#: addon/globalPlugins/offlineAI/downloader.py:208
+#, python-brace-format
+msgid "Cancelled at {p} percent; press Download again to resume."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/backup.py:62
-msgid "The file is not a valid zip archive."
+#: addon/globalPlugins/offlineAI/downloader.py:211
+msgid "Cancelled."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:157
+#: addon/globalPlugins/offlineAI/__init__.py:3498
+msgid "The text-to-speech engine is not installed."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:161
+msgid "The text-to-speech model has not been downloaded yet."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:163
+msgid "No text to speak."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:201
+msgid "Speech generation timed out."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:216
+msgid "Speech was cancelled."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:225
+msgid "No audio was produced. See the NVDA log for details."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:320
+msgid "Unsupported WAV sample width."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:362
+#: addon/globalPlugins/offlineAI/__init__.py:2377
+msgid "Generating speech."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:366
+#, python-brace-format
+msgid "Speech generation failed: {e}"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:368
+msgid "Playing."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:454
+msgid "Nothing to read."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:526
+#, python-brace-format
+msgid "Sentence {n} of {t}"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:534
+msgid "Finished reading."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:538
+msgid "Paused."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/tts.py:542
+msgid "Resumed."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/catalog.py:253
+msgid "invalid repository or file name"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/catalog.py:267
+#, python-brace-format
+msgid "the download link is not available (status {s})"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/catalog.py:279
+msgid "the model entry is not valid"
 msgstr ""
 
 #. Translators: name of a built-in persona.
@@ -212,7 +692,7 @@ msgid "Lock model in RAM (&mlock)"
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:332
-#: addon/globalPlugins/offlineAI/__init__.py:3313
+#: addon/globalPlugins/offlineAI/__init__.py:3312
 msgid ""
 "Memory-map model files (mma&p) - lets a model larger than your free RAM "
 "still run; turn off to load models fully into RAM"
@@ -284,17 +764,17 @@ msgstr ""
 
 #. Time-stretch quality for faster playback.
 #: addon/globalPlugins/offlineAI/__init__.py:415
-#: addon/globalPlugins/offlineAI/__init__.py:3339
+#: addon/globalPlugins/offlineAI/__init__.py:3338
 msgid "Smooth speech (default)"
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:416
-#: addon/globalPlugins/offlineAI/__init__.py:3340
+#: addon/globalPlugins/offlineAI/__init__.py:3339
 msgid "Crisp transients"
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:417
-#: addon/globalPlugins/offlineAI/__init__.py:3341
+#: addon/globalPlugins/offlineAI/__init__.py:3340
 msgid "Legacy sample-rate scaling"
 msgstr ""
 
@@ -308,22 +788,22 @@ msgstr ""
 
 #. OCR speed vs quality (controls image resolution / vision tokens).
 #: addon/globalPlugins/offlineAI/__init__.py:434
-#: addon/globalPlugins/offlineAI/__init__.py:3323
+#: addon/globalPlugins/offlineAI/__init__.py:3322
 msgid "Fast (lower resolution)"
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:435
-#: addon/globalPlugins/offlineAI/__init__.py:3324
+#: addon/globalPlugins/offlineAI/__init__.py:3323
 msgid "Balanced (default)"
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:436
-#: addon/globalPlugins/offlineAI/__init__.py:3325
+#: addon/globalPlugins/offlineAI/__init__.py:3324
 msgid "Best quality (slower)"
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:438
-#: addon/globalPlugins/offlineAI/__init__.py:3327
+#: addon/globalPlugins/offlineAI/__init__.py:3326
 msgid "&OCR speed vs quality:"
 msgstr ""
 
@@ -338,7 +818,7 @@ msgid ""
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:459
-#: addon/globalPlugins/offlineAI/__init__.py:3349
+#: addon/globalPlugins/offlineAI/__init__.py:3348
 msgid "Audio cues &volume:"
 msgstr ""
 
@@ -399,16 +879,9 @@ msgid "Running benchmark with {n}, please wait."
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:583
-#: addon/globalPlugins/offlineAI/__init__.py:3794
+#: addon/globalPlugins/offlineAI/__init__.py:1452
+#: addon/globalPlugins/offlineAI/__init__.py:3793
 msgid "Offline AI is busy. Please wait."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:591
-#: addon/globalPlugins/offlineAI/__init__.py:1708
-#: addon/globalPlugins/offlineAI/__init__.py:3800
-#: addon/globalPlugins/offlineAI/whisper_ui.py:358
-#, python-brace-format
-msgid "Could not load the model: {e}"
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:595
@@ -507,6 +980,7 @@ msgid "Defaults restored. Choose Save to keep them."
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:752
+#: addon/globalPlugins/offlineAI/backup.py:21
 msgid "Chat history"
 msgstr ""
 
@@ -555,15 +1029,6 @@ msgstr ""
 msgid "&Edit..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:840
-#: addon/globalPlugins/offlineAI/__init__.py:1363
-#: addon/globalPlugins/offlineAI/__init__.py:2209
-#: addon/globalPlugins/offlineAI/__init__.py:2659
-#: addon/globalPlugins/offlineAI/__init__.py:2906
-#: addon/globalPlugins/offlineAI/whisper_ui.py:143
-msgid "&Close"
-msgstr ""
-
 #: addon/globalPlugins/offlineAI/__init__.py:861
 msgid "You already have the maximum of 10 custom actions."
 msgstr ""
@@ -573,7 +1038,7 @@ msgid "Deleted."
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:891
-#: addon/globalPlugins/offlineAI/__init__.py:3979
+#: addon/globalPlugins/offlineAI/__init__.py:3978
 msgid "Custom action"
 msgstr ""
 
@@ -775,10 +1240,10 @@ msgstr ""
 #. Translators: Summary/title for this add-on
 #. to be shown on installation and add-on information found in add-on store
 #: addon/globalPlugins/offlineAI/__init__.py:1256
-#: addon/globalPlugins/offlineAI/__init__.py:3238
-#: addon/globalPlugins/offlineAI/__init__.py:3383
-#: addon/globalPlugins/offlineAI/__init__.py:3433
-#: addon/globalPlugins/offlineAI/__init__.py:4093 buildVars.py:20
+#: addon/globalPlugins/offlineAI/__init__.py:3237
+#: addon/globalPlugins/offlineAI/__init__.py:3382
+#: addon/globalPlugins/offlineAI/__init__.py:3432
+#: addon/globalPlugins/offlineAI/__init__.py:4092 buildVars.py:20
 msgid "Offline AI"
 msgstr ""
 
@@ -788,19 +1253,13 @@ msgstr ""
 
 #. Persona / preset dropdown.
 #: addon/globalPlugins/offlineAI/__init__.py:1283
-#: addon/globalPlugins/offlineAI/__init__.py:1489
-#: addon/globalPlugins/offlineAI/__init__.py:1522
+#: addon/globalPlugins/offlineAI/__init__.py:1488
+#: addon/globalPlugins/offlineAI/__init__.py:1521
 msgid "Custom..."
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:1285
 msgid "&Persona / preset:"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:1291
-#: addon/globalPlugins/offlineAI/__init__.py:1428
-#: addon/globalPlugins/offlineAI/whisper_ui.py:98
-msgid "&Download model"
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:1294
@@ -836,9 +1295,9 @@ msgid "&Send"
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:1324
-#: addon/globalPlugins/offlineAI/__init__.py:2194
-#: addon/globalPlugins/offlineAI/__init__.py:2626
-#: addon/globalPlugins/offlineAI/__init__.py:2887
+#: addon/globalPlugins/offlineAI/__init__.py:2193
+#: addon/globalPlugins/offlineAI/__init__.py:2625
+#: addon/globalPlugins/offlineAI/__init__.py:2886
 msgid "St&op"
 msgstr ""
 
@@ -871,14 +1330,8 @@ msgid "C&lear context"
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/__init__.py:1361
-#: addon/globalPlugins/offlineAI/__init__.py:1938
+#: addon/globalPlugins/offlineAI/__init__.py:1937
 msgid "Context: none"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:1386
-#: addon/globalPlugins/offlineAI/__init__.py:3281
-#: addon/globalPlugins/offlineAI/whisper_ui.py:162
-msgid " [downloaded]"
 msgstr ""
 
 #. Translators: one entry of the model list. {ram} is the memory needed.
@@ -902,239 +1355,185 @@ msgid ""
 "download it again later."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1449
-#: addon/globalPlugins/offlineAI/__init__.py:1461
-#: addon/globalPlugins/offlineAI/whisper_ui.py:249
-msgid "Delete model"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:1455
-#: addon/globalPlugins/offlineAI/whisper_ui.py:256
-msgid "Model file deleted."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:1457
-#: addon/globalPlugins/offlineAI/whisper_ui.py:258
-#, python-brace-format
-msgid "Could not delete the file: {e}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:1460
+#: addon/globalPlugins/offlineAI/__init__.py:1459
 #, python-brace-format
 msgid "Also remove {n} from your model list?"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1476
+#: addon/globalPlugins/offlineAI/__init__.py:1475
 msgid "Name this preset (uses your current system prompt and temperature):"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1477
+#: addon/globalPlugins/offlineAI/__init__.py:1476
 msgid "Save preset"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1496
+#: addon/globalPlugins/offlineAI/__init__.py:1495
 msgid "Preset saved."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1506
+#: addon/globalPlugins/offlineAI/__init__.py:1505
 #, python-brace-format
 msgid "Preset applied: {n}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1516
+#: addon/globalPlugins/offlineAI/__init__.py:1515
 msgid "Settings saved."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1528
+#: addon/globalPlugins/offlineAI/__init__.py:1527
 msgid "Choose a folder to store downloaded models"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1535
+#: addon/globalPlugins/offlineAI/__init__.py:1534
 #, python-brace-format
 msgid "Models folder set to {p}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1552
+#: addon/globalPlugins/offlineAI/__init__.py:1551
 msgid "That model entry was not valid."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1562
+#: addon/globalPlugins/offlineAI/__init__.py:1561
 msgid "Custom model added."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1575
+#: addon/globalPlugins/offlineAI/__init__.py:1574
 msgid "Model added from HuggingFace. You can now download it."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1583
+#: addon/globalPlugins/offlineAI/__init__.py:1582
 msgid ""
 "Enter a catalog URL (direct link to a models JSON), or leave blank to use "
 "only the built-in list:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1585
+#: addon/globalPlugins/offlineAI/__init__.py:1584
 msgid "Catalog URL"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1591
+#: addon/globalPlugins/offlineAI/__init__.py:1590
 msgid "Refreshing catalog."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1608
+#: addon/globalPlugins/offlineAI/__init__.py:1607
 #, python-brace-format
 msgid "Catalog refreshed. {n} models available."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1618
-#: addon/globalPlugins/offlineAI/whisper_ui.py:228
-msgid "Model already downloaded."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:1627
-#: addon/globalPlugins/offlineAI/whisper_ui.py:237
-msgid "Download complete."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:1628
-#: addon/globalPlugins/offlineAI/__init__.py:3097
-#: addon/globalPlugins/offlineAI/__init__.py:3104
-#: addon/globalPlugins/offlineAI/whisper_ui.py:238
-#, python-brace-format
-msgid "Download failed: {e}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:1636
-#: addon/globalPlugins/offlineAI/__init__.py:2704
-#: addon/globalPlugins/offlineAI/__init__.py:2963
-#: addon/globalPlugins/offlineAI/whisper_ui.py:316
-msgid "Stopping."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:1641
+#: addon/globalPlugins/offlineAI/__init__.py:1640
 msgid "No model selected."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1645
+#: addon/globalPlugins/offlineAI/__init__.py:1644
 msgid "This model is not downloaded yet. Download it first."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1649
+#: addon/globalPlugins/offlineAI/__init__.py:1648
 msgid "Please type a query first."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1654
+#: addon/globalPlugins/offlineAI/__init__.py:1653
 msgid "Offline AI is busy with another request. Please wait."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1664
+#: addon/globalPlugins/offlineAI/__init__.py:1663
 msgid "Thinking."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1728
+#: addon/globalPlugins/offlineAI/__init__.py:1727
 msgid ""
 "Note: the attached context is longer than this model's context window, so "
 "only the first part was used. Raise the context size in Settings to use more "
 "of it."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1742
-msgid "[Reasoning done] "
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:1769
-#: addon/globalPlugins/offlineAI/__init__.py:1835
+#: addon/globalPlugins/offlineAI/__init__.py:1768
+#: addon/globalPlugins/offlineAI/__init__.py:1834
 msgid "(The model returned an empty response.)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1773
+#: addon/globalPlugins/offlineAI/__init__.py:1772
 msgid ""
 "The question, together with its attached context, is longer than this "
 "model's context window. Shorten it, clear the context, or raise the context "
 "size in Settings."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1779
+#: addon/globalPlugins/offlineAI/__init__.py:1778
 #, python-brace-format
 msgid "Error during generation: {e}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1811
+#: addon/globalPlugins/offlineAI/__init__.py:1810
 msgid "blank line"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1858
-#: addon/globalPlugins/offlineAI/__init__.py:2436
-#: addon/globalPlugins/offlineAI/__init__.py:3478
-#: addon/globalPlugins/offlineAI/__init__.py:3488
+#: addon/globalPlugins/offlineAI/__init__.py:1857
+#: addon/globalPlugins/offlineAI/__init__.py:2435
+#: addon/globalPlugins/offlineAI/__init__.py:3477
+#: addon/globalPlugins/offlineAI/__init__.py:3487
 msgid "Stopped."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1860
+#: addon/globalPlugins/offlineAI/__init__.py:1859
 #, python-brace-format
 msgid "Done. {t:.1f} tokens per second."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1862
+#: addon/globalPlugins/offlineAI/__init__.py:1861
 msgid "Done."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1917
+#: addon/globalPlugins/offlineAI/__init__.py:1916
 msgid "Started a new chat."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1922
+#: addon/globalPlugins/offlineAI/__init__.py:1921
 msgid "document"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1926
+#: addon/globalPlugins/offlineAI/__init__.py:1925
 #, python-brace-format
 msgid "Attached {label}, about {n} tokens. Type your question."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1935
+#: addon/globalPlugins/offlineAI/__init__.py:1934
 #, python-brace-format
 msgid "Context: {label} (~{n} tokens)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1942
+#: addon/globalPlugins/offlineAI/__init__.py:1941
 msgid "Choose a text or source code file to attach as context"
 msgstr ""
 
 #. Translators: file type filters when attaching a file to the chat.
-#: addon/globalPlugins/offlineAI/__init__.py:1944
+#: addon/globalPlugins/offlineAI/__init__.py:1943
 msgid "Text and source code files"
 msgstr ""
 
-#. Translators: file type filter.
-#: addon/globalPlugins/offlineAI/__init__.py:1945
-#: addon/globalPlugins/offlineAI/__init__.py:3038
-#: addon/globalPlugins/offlineAI/__init__.py:3590
-#: addon/globalPlugins/offlineAI/whisper_ui.py:45
-msgid "All files"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:1955
+#: addon/globalPlugins/offlineAI/__init__.py:1954
 msgid ""
 "That file is larger than 20 MB, which is far more than any local model can "
 "read."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1960
+#: addon/globalPlugins/offlineAI/__init__.py:1959
 msgid ""
 "That does not look like a text file. Only text-based files (documents, code, "
 "logs, data) can be attached."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1964
+#: addon/globalPlugins/offlineAI/__init__.py:1963
 #, python-brace-format
 msgid "Could not read the file: {e}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1967
+#: addon/globalPlugins/offlineAI/__init__.py:1966
 msgid "That file is empty."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1975
+#: addon/globalPlugins/offlineAI/__init__.py:1974
 #, python-brace-format
 msgid ""
 "This file is about {n} tokens, but the model's context is {c} tokens, so "
@@ -1142,978 +1541,981 @@ msgid ""
 "Settings. Attach anyway?"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1979
+#: addon/globalPlugins/offlineAI/__init__.py:1978
 msgid "Large file"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1987
+#: addon/globalPlugins/offlineAI/__init__.py:1986
 msgid "Context cleared."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1993
+#: addon/globalPlugins/offlineAI/__init__.py:1992
 msgid "No saved chats yet."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:1999
+#: addon/globalPlugins/offlineAI/__init__.py:1998
 msgid "Chat deleted."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2007
+#: addon/globalPlugins/offlineAI/__init__.py:2006
 msgid "Chat loaded."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2013
+#: addon/globalPlugins/offlineAI/__init__.py:2012
 msgid "You: "
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2013
+#: addon/globalPlugins/offlineAI/__init__.py:2012
 msgid "AI: "
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2021
+#: addon/globalPlugins/offlineAI/__init__.py:2020
 msgid "Nothing to export yet."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2024
+#: addon/globalPlugins/offlineAI/__init__.py:2023
 msgid "Export chat"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2026
+#: addon/globalPlugins/offlineAI/__init__.py:2025
 msgid "Markdown|*.md|Text file|*.txt"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2034
-#: addon/globalPlugins/offlineAI/__init__.py:2452
-#: addon/globalPlugins/offlineAI/__init__.py:2839
-#: addon/globalPlugins/offlineAI/whisper_ui.py:600
-#, python-brace-format
-msgid "Saved {n}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:2037
-#: addon/globalPlugins/offlineAI/__init__.py:2841
-#: addon/globalPlugins/offlineAI/whisper_ui.py:603
-#, python-brace-format
-msgid "Could not save: {e}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:2053
+#: addon/globalPlugins/offlineAI/__init__.py:2052
 msgid "No code blocks found in the latest answer."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2065
+#: addon/globalPlugins/offlineAI/__init__.py:2064
 msgid "Choose a code block to copy:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2065
+#: addon/globalPlugins/offlineAI/__init__.py:2064
 msgid "Copy code block"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2075
+#: addon/globalPlugins/offlineAI/__init__.py:2074
 #, python-brace-format
 msgid "{l} copied."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2079
+#: addon/globalPlugins/offlineAI/__init__.py:2078
 msgid "Could not copy the code."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2119
+#: addon/globalPlugins/offlineAI/__init__.py:2118
 msgid "Offline AI - Text to speech (voice cloning)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2133
+#: addon/globalPlugins/offlineAI/__init__.py:2132
 msgid "&Text to speak:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2141
+#: addon/globalPlugins/offlineAI/__init__.py:2140
 msgid "&Language:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2153
+#: addon/globalPlugins/offlineAI/__init__.py:2152
 msgid "&Voice:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2157
+#: addon/globalPlugins/offlineAI/__init__.py:2156
 msgid "&Add voice from file..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2160
+#: addon/globalPlugins/offlineAI/__init__.py:2159
 msgid "&Manage voices..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2168
+#: addon/globalPlugins/offlineAI/__init__.py:2167
 msgid "Playback &speed:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2177
+#: addon/globalPlugins/offlineAI/__init__.py:2176
 msgid "&Speak"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2180
+#: addon/globalPlugins/offlineAI/__init__.py:2179
 msgid "Sa&ve as WAV file..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2187
+#: addon/globalPlugins/offlineAI/__init__.py:2186
 msgid "&Read document (streaming)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2190
+#: addon/globalPlugins/offlineAI/__init__.py:2189
 msgid "&Pause/Resume"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2204
+#: addon/globalPlugins/offlineAI/__init__.py:2203
 msgid "&Download voice model (~1.5 GB)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2219
+#: addon/globalPlugins/offlineAI/__init__.py:2218
 msgid ""
 "Note: the text-to-speech engine is not installed in this copy of the add-on."
 msgstr ""
 
 #. First entry is always the default (no cloning).
-#: addon/globalPlugins/offlineAI/__init__.py:2247
+#: addon/globalPlugins/offlineAI/__init__.py:2246
 msgid "Default voice"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2265
+#: addon/globalPlugins/offlineAI/__init__.py:2264
 msgid "Choose a voice sample (a few seconds of clear speech)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2266
+#: addon/globalPlugins/offlineAI/__init__.py:2265
 msgid "Audio files|*.wav;*.mp3;*.flac;*.m4a|All files|*.*"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2275
+#: addon/globalPlugins/offlineAI/__init__.py:2274
 msgid "Name this voice (e.g. Narrator, Lecturer):"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2276
+#: addon/globalPlugins/offlineAI/__init__.py:2275
 msgid "Save voice"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2305
+#: addon/globalPlugins/offlineAI/__init__.py:2304
 msgid "Voice saved."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2311
+#: addon/globalPlugins/offlineAI/__init__.py:2310
 msgid "No saved voices yet. Use Add voice from file."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2315
+#: addon/globalPlugins/offlineAI/__init__.py:2314
 msgid "Select a voice to delete:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2315
+#: addon/globalPlugins/offlineAI/__init__.py:2314
 msgid "Manage voices"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2334
+#: addon/globalPlugins/offlineAI/__init__.py:2333
 msgid "Voice deleted."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2344
-#: addon/globalPlugins/offlineAI/__init__.py:2360
+#: addon/globalPlugins/offlineAI/__init__.py:2343
+#: addon/globalPlugins/offlineAI/__init__.py:2359
 msgid "Type some text first."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2347
-#: addon/globalPlugins/offlineAI/__init__.py:2373
+#: addon/globalPlugins/offlineAI/__init__.py:2346
+#: addon/globalPlugins/offlineAI/__init__.py:2372
 msgid "Already generating speech."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2363
+#: addon/globalPlugins/offlineAI/__init__.py:2362
 msgid "Save speech as WAV"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2364
+#: addon/globalPlugins/offlineAI/__init__.py:2363
 msgid "WAV audio|*.wav"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2378
-#: addon/globalPlugins/offlineAI/tts.py:362
-msgid "Generating speech."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:2389
+#: addon/globalPlugins/offlineAI/__init__.py:2388
 msgid "Type or paste some text first."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2392
+#: addon/globalPlugins/offlineAI/__init__.py:2391
 msgid "Already reading."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2450
-#: addon/globalPlugins/offlineAI/__init__.py:2462
-#: addon/globalPlugins/offlineAI/__init__.py:2744
-#: addon/globalPlugins/offlineAI/__init__.py:3069
-#: addon/globalPlugins/offlineAI/__init__.py:3566
+#: addon/globalPlugins/offlineAI/__init__.py:2449
+#: addon/globalPlugins/offlineAI/__init__.py:2461
+#: addon/globalPlugins/offlineAI/__init__.py:2743
+#: addon/globalPlugins/offlineAI/__init__.py:3068
+#: addon/globalPlugins/offlineAI/__init__.py:3565
 #, python-brace-format
 msgid "Failed: {e}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2483
+#: addon/globalPlugins/offlineAI/__init__.py:2482
 msgid "Voice model ready."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2485
-#: addon/globalPlugins/offlineAI/__init__.py:2492
+#: addon/globalPlugins/offlineAI/__init__.py:2484
+#: addon/globalPlugins/offlineAI/__init__.py:2491
 #, python-brace-format
 msgid "Model download failed: {e}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2498
-#: addon/globalPlugins/offlineAI/__init__.py:3110
+#: addon/globalPlugins/offlineAI/__init__.py:2497
+#: addon/globalPlugins/offlineAI/__init__.py:3109
 msgid "Downloading the second part."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2506
+#: addon/globalPlugins/offlineAI/__init__.py:2505
 msgid "Downloading the voice model."
 msgstr ""
 
 #. Translators: OCR language hint meaning "do not assume a language".
-#: addon/globalPlugins/offlineAI/__init__.py:2552
+#: addon/globalPlugins/offlineAI/__init__.py:2551
 msgid "Automatic / mixed"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2567
+#: addon/globalPlugins/offlineAI/__init__.py:2566
 msgid "OCR a PDF"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2590
+#: addon/globalPlugins/offlineAI/__init__.py:2589
 #, python-brace-format
 msgid "This PDF has {n} pages."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2595
-#: addon/globalPlugins/offlineAI/__init__.py:2868
+#: addon/globalPlugins/offlineAI/__init__.py:2594
+#: addon/globalPlugins/offlineAI/__init__.py:2867
 msgid "Text &language (hint):"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2600
+#: addon/globalPlugins/offlineAI/__init__.py:2599
 msgid "&From page:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2604
+#: addon/globalPlugins/offlineAI/__init__.py:2603
 msgid "From page"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2608
+#: addon/globalPlugins/offlineAI/__init__.py:2607
 msgid "&To page:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2612
+#: addon/globalPlugins/offlineAI/__init__.py:2611
 msgid "To page"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2620
+#: addon/globalPlugins/offlineAI/__init__.py:2619
 msgid "OCR &this page"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2623
+#: addon/globalPlugins/offlineAI/__init__.py:2622
 msgid "OCR the &range"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2634
+#: addon/globalPlugins/offlineAI/__init__.py:2633
 msgid "&Previous page"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2637
+#: addon/globalPlugins/offlineAI/__init__.py:2636
 msgid "&Next page"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2645
+#: addon/globalPlugins/offlineAI/__init__.py:2644
 msgid "Page te&xt:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2649
+#: addon/globalPlugins/offlineAI/__init__.py:2648
 msgid "&Ask AI about this page..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2654
+#: addon/globalPlugins/offlineAI/__init__.py:2653
 msgid "&Save all OCR'd text..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2712
+#: addon/globalPlugins/offlineAI/__init__.py:2711
 #, python-brace-format
 msgid "Page {n} of {t}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2718
+#: addon/globalPlugins/offlineAI/__init__.py:2717
 #, python-brace-format
 msgid "(Page {n} not processed yet. Use 'OCR this page' or 'OCR the range'.)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2730
-#: addon/globalPlugins/offlineAI/__init__.py:2752
+#: addon/globalPlugins/offlineAI/__init__.py:2729
+#: addon/globalPlugins/offlineAI/__init__.py:2751
 msgid "Already working."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2734
+#: addon/globalPlugins/offlineAI/__init__.py:2733
 #, python-brace-format
 msgid "Reading page {n}."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2748
+#: addon/globalPlugins/offlineAI/__init__.py:2747
 #, python-brace-format
 msgid "Page {n} done."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2757
+#: addon/globalPlugins/offlineAI/__init__.py:2756
 msgid "The from page must not be after the to page."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2760
+#: addon/globalPlugins/offlineAI/__init__.py:2759
 #, python-brace-format
 msgid "OCR of pages {a} to {b} started."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2776
+#: addon/globalPlugins/offlineAI/__init__.py:2775
 #, python-brace-format
 msgid "Page {n} failed: {e}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2778
+#: addon/globalPlugins/offlineAI/__init__.py:2777
 #, python-brace-format
 msgid "Processed {d} of {t}."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2791
+#: addon/globalPlugins/offlineAI/__init__.py:2790
 #, python-brace-format
 msgid "Stopped. {d} of {t} pages processed."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2794
+#: addon/globalPlugins/offlineAI/__init__.py:2793
 msgid "Range complete."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2799
+#: addon/globalPlugins/offlineAI/__init__.py:2798
 msgid "OCR this page first."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2801
+#: addon/globalPlugins/offlineAI/__init__.py:2800
 #, python-brace-format
 msgid "PDF page {n}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2824
+#: addon/globalPlugins/offlineAI/__init__.py:2823
 msgid "No pages have been processed yet."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2827
+#: addon/globalPlugins/offlineAI/__init__.py:2826
 msgid "Save OCR text"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2830
+#: addon/globalPlugins/offlineAI/__init__.py:2829
 msgid "Text file|*.txt"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2837
+#: addon/globalPlugins/offlineAI/__init__.py:2836
 #, python-brace-format
 msgid "--- Page {n} ---"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2850
+#: addon/globalPlugins/offlineAI/__init__.py:2849
 msgid "Offline AI - OCR and image reading"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2863
+#: addon/globalPlugins/offlineAI/__init__.py:2862
 msgid ""
 "Read text from the screen or an image file using a local AI vision model. "
 "Nothing leaves your computer."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2872
+#: addon/globalPlugins/offlineAI/__init__.py:2871
 msgid "OCR the &screen"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2875
+#: addon/globalPlugins/offlineAI/__init__.py:2874
 msgid "OCR an image &file..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2878
+#: addon/globalPlugins/offlineAI/__init__.py:2877
 msgid "&Describe an image..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2881
+#: addon/globalPlugins/offlineAI/__init__.py:2880
 msgid "OCR the clip&board image"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2884
+#: addon/globalPlugins/offlineAI/__init__.py:2883
 msgid "OCR a &PDF..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2894
+#: addon/globalPlugins/offlineAI/__init__.py:2893
 msgid "&Result:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2897
+#: addon/globalPlugins/offlineAI/__init__.py:2896
 msgid "&Ask AI about this text..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2902
+#: addon/globalPlugins/offlineAI/__init__.py:2901
 msgid "&Download OCR model (~2.7 GB)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2916
+#: addon/globalPlugins/offlineAI/__init__.py:2915
 msgid "Note: the OCR engine is not installed in this copy."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2991
-#: addon/globalPlugins/offlineAI/__init__.py:3581
+#: addon/globalPlugins/offlineAI/__init__.py:2990
+#: addon/globalPlugins/offlineAI/__init__.py:3580
 #, python-brace-format
 msgid "Capture failed: {e}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:2993
+#: addon/globalPlugins/offlineAI/__init__.py:2992
 msgid "Screen captured. Reading."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3003
-#: addon/globalPlugins/offlineAI/__init__.py:3631
+#: addon/globalPlugins/offlineAI/__init__.py:3002
+#: addon/globalPlugins/offlineAI/__init__.py:3630
 msgid "Reading clipboard image."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3014
+#: addon/globalPlugins/offlineAI/__init__.py:3013
 msgid "Choose a PDF"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3015
+#: addon/globalPlugins/offlineAI/__init__.py:3014
 msgid "PDF files|*.pdf|All files|*.*"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3026
+#: addon/globalPlugins/offlineAI/__init__.py:3025
 msgid "Could not open that PDF."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3036
+#: addon/globalPlugins/offlineAI/__init__.py:3035
 msgid "Choose an image"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3037
-#: addon/globalPlugins/offlineAI/__init__.py:3589
+#: addon/globalPlugins/offlineAI/__init__.py:3036
+#: addon/globalPlugins/offlineAI/__init__.py:3588
 msgid "Images"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3046
-#: addon/globalPlugins/offlineAI/__init__.py:3605
+#: addon/globalPlugins/offlineAI/__init__.py:3045
+#: addon/globalPlugins/offlineAI/__init__.py:3604
 msgid "Reading image."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3082
+#: addon/globalPlugins/offlineAI/__init__.py:3081
 msgid "There is no recognized text yet."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3084
+#: addon/globalPlugins/offlineAI/__init__.py:3083
 msgid "OCR text"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3096
+#: addon/globalPlugins/offlineAI/__init__.py:3095
 msgid "OCR model ready."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3117
+#: addon/globalPlugins/offlineAI/__init__.py:3116
 msgid "Downloading the OCR model."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3159
+#: addon/globalPlugins/offlineAI/__init__.py:3158
 msgid "Offline AI Quick Launcher"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3165
+#: addon/globalPlugins/offlineAI/__init__.py:3164
 msgid "&Type to filter, then press Enter:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3172
+#: addon/globalPlugins/offlineAI/__init__.py:3171
 msgid "Filter commands"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3197
+#: addon/globalPlugins/offlineAI/__init__.py:3196
 #, python-brace-format
 msgid "{n} commands. {first}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3200
+#: addon/globalPlugins/offlineAI/__init__.py:3199
 msgid "No matching command."
 msgstr ""
 
 #. Translators: translation target meaning "whatever language NVDA uses".
-#: addon/globalPlugins/offlineAI/__init__.py:3248
+#: addon/globalPlugins/offlineAI/__init__.py:3247
 #, python-brace-format
 msgid "Same as NVDA ({language})"
 msgstr ""
 
 #. Translators: label of the first translation target language.
-#: addon/globalPlugins/offlineAI/__init__.py:3253
+#: addon/globalPlugins/offlineAI/__init__.py:3252
 msgid "My &language (for \"translate to my language\" and answers):"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3260
+#: addon/globalPlugins/offlineAI/__init__.py:3259
 msgid "&Second translation language:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3267
+#: addon/globalPlugins/offlineAI/__init__.py:3266
 msgid "&Dictation language:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3276
+#: addon/globalPlugins/offlineAI/__init__.py:3275
 msgid "Automatic (best downloaded model)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3281
+#: addon/globalPlugins/offlineAI/__init__.py:3280
 msgid " [not downloaded]"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3284
+#: addon/globalPlugins/offlineAI/__init__.py:3283
 msgid "Dictation &model:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3290
+#: addon/globalPlugins/offlineAI/__init__.py:3289
 msgid "Wherever the focus is when the text is ready"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3291
+#: addon/globalPlugins/offlineAI/__init__.py:3290
 msgid ""
 "The window I dictated in, even if I moved away (then return to where I was)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3293
+#: addon/globalPlugins/offlineAI/__init__.py:3292
 msgid "Only copy it to the clipboard"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3296
+#: addon/globalPlugins/offlineAI/__init__.py:3295
 msgid "&Insert dictated text into:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3302
+#: addon/globalPlugins/offlineAI/__init__.py:3301
 msgid "&Warning before inserting (seconds, 0 = none):"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3305
+#: addon/globalPlugins/offlineAI/__init__.py:3304
 msgid "&Faster transcription of short dictations"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3308
+#: addon/globalPlugins/offlineAI/__init__.py:3307
 msgid "&Restore my clipboard after inserting dictated text"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3317
+#: addon/globalPlugins/offlineAI/__init__.py:3316
 msgid "CPU &threads (0 = automatic):"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3320
+#: addon/globalPlugins/offlineAI/__init__.py:3319
 msgid ""
 "Free the &quick-action model after this many idle minutes (0 = keep it "
 "loaded):"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3334
+#: addon/globalPlugins/offlineAI/__init__.py:3333
 msgid "AI voice sp&eed:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3343
+#: addon/globalPlugins/offlineAI/__init__.py:3342
 msgid "Speed q&uality:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3353
+#: addon/globalPlugins/offlineAI/__init__.py:3352
 msgid "Mute all audio &cues"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3356
+#: addon/globalPlugins/offlineAI/__init__.py:3355
 msgid "Format ta&bles for screen readers"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3400
+#: addon/globalPlugins/offlineAI/__init__.py:3399
 msgid "Offline AI..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3400
+#: addon/globalPlugins/offlineAI/__init__.py:3399
 msgid "Open the Offline AI window"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3402
+#: addon/globalPlugins/offlineAI/__init__.py:3401
 msgid "Offline AI - Transcribe speech..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3403
+#: addon/globalPlugins/offlineAI/__init__.py:3402
 msgid "Open the speech-to-text window"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3405
+#: addon/globalPlugins/offlineAI/__init__.py:3404
 msgid "Offline AI - Text to speech..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3406
+#: addon/globalPlugins/offlineAI/__init__.py:3405
 msgid "Open the text-to-speech and voice cloning window"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3408
+#: addon/globalPlugins/offlineAI/__init__.py:3407
 msgid "Offline AI - OCR and image reading..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3409
+#: addon/globalPlugins/offlineAI/__init__.py:3408
 msgid "Open the OCR and image description window"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3432
+#: addon/globalPlugins/offlineAI/__init__.py:3431
 #, python-brace-format
 msgid "The window could not be opened: {e}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3447
+#: addon/globalPlugins/offlineAI/__init__.py:3446
 msgid "Opens the Offline AI window"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3451
+#: addon/globalPlugins/offlineAI/__init__.py:3450
 msgid "Opens the Offline AI speech-to-text window"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3455
+#: addon/globalPlugins/offlineAI/__init__.py:3454
 msgid "Opens the Offline AI text-to-speech window"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3459
+#: addon/globalPlugins/offlineAI/__init__.py:3458
 msgid "Opens the Offline AI OCR and image reading window"
 msgstr ""
 
 #. --- stop everything ---
-#: addon/globalPlugins/offlineAI/__init__.py:3466
+#: addon/globalPlugins/offlineAI/__init__.py:3465
 msgid "Offline AI: stop the current task (quick action, speech or OCR)"
 msgstr ""
 
 #. --- speak selection with the AI voice ---
-#: addon/globalPlugins/offlineAI/__init__.py:3482
+#: addon/globalPlugins/offlineAI/__init__.py:3481
 msgid ""
 "Offline AI: speak selected text aloud with the voice model (press again to "
 "stop)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3495
-#: addon/globalPlugins/offlineAI/__init__.py:3780
-#: addon/globalPlugins/offlineAI/__init__.py:3892
+#: addon/globalPlugins/offlineAI/__init__.py:3494
+#: addon/globalPlugins/offlineAI/__init__.py:3779
+#: addon/globalPlugins/offlineAI/__init__.py:3891
 msgid "No text is selected."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3499
-#: addon/globalPlugins/offlineAI/tts.py:157
-msgid "The text-to-speech engine is not installed."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/__init__.py:3502
+#: addon/globalPlugins/offlineAI/__init__.py:3501
 msgid "Download the voice model first from the Text to speech window."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3522
+#: addon/globalPlugins/offlineAI/__init__.py:3521
 #, python-brace-format
 msgid "Speaking selection in {language}."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3534
+#: addon/globalPlugins/offlineAI/__init__.py:3533
 msgid "Download the OCR model first from the OCR window."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3568
+#: addon/globalPlugins/offlineAI/__init__.py:3567
 #, python-brace-format
 msgid "Offline AI - {t}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3570
+#: addon/globalPlugins/offlineAI/__init__.py:3569
 msgid "Offline AI: OCR the whole screen and read the text"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3575
+#: addon/globalPlugins/offlineAI/__init__.py:3574
 msgid "Capturing screen for OCR."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3583
+#: addon/globalPlugins/offlineAI/__init__.py:3582
 msgid "Screen OCR"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3598
+#: addon/globalPlugins/offlineAI/__init__.py:3597
 msgid "Offline AI: OCR an image file"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3602
+#: addon/globalPlugins/offlineAI/__init__.py:3601
 msgid "Choose an image to read"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3607
+#: addon/globalPlugins/offlineAI/__init__.py:3606
 msgid "Image OCR"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3610
+#: addon/globalPlugins/offlineAI/__init__.py:3609
 msgid "Offline AI: describe an image file"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3614
+#: addon/globalPlugins/offlineAI/__init__.py:3613
 msgid "Choose an image to describe"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3617
+#: addon/globalPlugins/offlineAI/__init__.py:3616
 msgid "Describing image."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3619
+#: addon/globalPlugins/offlineAI/__init__.py:3618
 msgid "Image description"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3630
+#: addon/globalPlugins/offlineAI/__init__.py:3629
 msgid "Describing clipboard image."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3635
+#: addon/globalPlugins/offlineAI/__init__.py:3634
 msgid "Clipboard image description"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3636
+#: addon/globalPlugins/offlineAI/__init__.py:3635
 msgid "Clipboard OCR"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3639
+#: addon/globalPlugins/offlineAI/__init__.py:3638
 msgid "Offline AI: OCR an image on the clipboard"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3644
+#: addon/globalPlugins/offlineAI/__init__.py:3643
 msgid "Offline AI: describe an image on the clipboard"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3649
+#: addon/globalPlugins/offlineAI/__init__.py:3648
 msgid "Opens the Offline AI Quick Launcher (command palette)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3662
+#: addon/globalPlugins/offlineAI/__init__.py:3661
 msgid "No text was selected when the launcher opened."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3668
+#: addon/globalPlugins/offlineAI/__init__.py:3667
 msgid "Chat with Offline AI"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3669
+#: addon/globalPlugins/offlineAI/__init__.py:3668
 msgid "Text to speech"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3670
+#: addon/globalPlugins/offlineAI/__init__.py:3669
 msgid "OCR and image reading"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3671
+#: addon/globalPlugins/offlineAI/__init__.py:3670
 msgid "Transcribe speech (Whisper)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3672
+#: addon/globalPlugins/offlineAI/__init__.py:3671
 msgid "Start or stop dictation"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3674
+#: addon/globalPlugins/offlineAI/__init__.py:3673
 msgid "OCR the screen"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3676
+#: addon/globalPlugins/offlineAI/__init__.py:3675
 msgid "OCR an image file"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3678
+#: addon/globalPlugins/offlineAI/__init__.py:3677
 msgid "Describe an image file"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3680
+#: addon/globalPlugins/offlineAI/__init__.py:3679
 msgid "OCR clipboard image"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3682
+#: addon/globalPlugins/offlineAI/__init__.py:3681
 msgid "Describe clipboard image"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3684
+#: addon/globalPlugins/offlineAI/__init__.py:3683
 msgid "Ask AI about clipboard text"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3686
-#: addon/globalPlugins/offlineAI/__init__.py:3689
+#: addon/globalPlugins/offlineAI/__init__.py:3685
+#: addon/globalPlugins/offlineAI/__init__.py:3688
 #, python-brace-format
 msgid "Translate selection to {language}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3692
+#: addon/globalPlugins/offlineAI/__init__.py:3691
 msgid "Translate selection to another language..."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3694
+#: addon/globalPlugins/offlineAI/__init__.py:3693
 msgid "Summarize selection"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3695
+#: addon/globalPlugins/offlineAI/__init__.py:3694
 msgid "Proofread selection"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3696
+#: addon/globalPlugins/offlineAI/__init__.py:3695
 msgid "Explain selected code or error"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3697
+#: addon/globalPlugins/offlineAI/__init__.py:3696
 msgid "Speak selection with the AI voice"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3698
+#: addon/globalPlugins/offlineAI/__init__.py:3697
 msgid "Stop the current task"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3711
+#: addon/globalPlugins/offlineAI/__init__.py:3710
 msgid "Offline AI: ask AI about the text on the clipboard"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3721
+#: addon/globalPlugins/offlineAI/__init__.py:3720
 msgid "There is no text on the clipboard."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3724
+#: addon/globalPlugins/offlineAI/__init__.py:3723
 msgid "clipboard text"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3784
+#: addon/globalPlugins/offlineAI/__init__.py:3783
 msgid "No downloaded model found. Open Offline AI and download one first."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3787
+#: addon/globalPlugins/offlineAI/__init__.py:3786
 #, python-brace-format
 msgid "{a}. Working."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3816
+#: addon/globalPlugins/offlineAI/__init__.py:3815
 msgid ""
 "Note: the text is longer than the model's context window, so only the first "
 "part was used."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3825
+#: addon/globalPlugins/offlineAI/__init__.py:3824
 #, python-brace-format
 msgid "Part {i} of {n}."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3831
+#: addon/globalPlugins/offlineAI/__init__.py:3830
 msgid ""
 "The text is too long for this model's context window. Raise the context size "
 "in Settings or select less text."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3835
-#: addon/globalPlugins/offlineAI/__init__.py:3848
+#: addon/globalPlugins/offlineAI/__init__.py:3834
+#: addon/globalPlugins/offlineAI/__init__.py:3847
 #, python-brace-format
 msgid "Error: {e}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3843
+#: addon/globalPlugins/offlineAI/__init__.py:3842
 msgid "The model returned nothing."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3866
+#: addon/globalPlugins/offlineAI/__init__.py:3865
 #, python-brace-format
 msgid "{a} copied to clipboard."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3867
+#: addon/globalPlugins/offlineAI/__init__.py:3866
 #, python-brace-format
 msgid "{a} finished, but could not be copied."
 msgstr ""
 
 #. The result opens in a window NVDA reads automatically and that can be
 #. reviewed with the reading keys, copied, and closed with Escape.
-#: addon/globalPlugins/offlineAI/__init__.py:3874
+#: addon/globalPlugins/offlineAI/__init__.py:3873
 #, python-brace-format
 msgid "Offline AI - {a}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3885
+#: addon/globalPlugins/offlineAI/__init__.py:3884
 #, python-brace-format
 msgid "Translate to {language}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3896
+#: addon/globalPlugins/offlineAI/__init__.py:3895
 msgid "Translate the selected text into:"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3897
+#: addon/globalPlugins/offlineAI/__init__.py:3896
 msgid "Offline AI - Translate"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3915
+#: addon/globalPlugins/offlineAI/__init__.py:3914
 msgid "Summarize"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3922
+#: addon/globalPlugins/offlineAI/__init__.py:3921
 msgid "Proofread"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3928
+#: addon/globalPlugins/offlineAI/__init__.py:3927
 msgid "Explain"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3930
+#: addon/globalPlugins/offlineAI/__init__.py:3929
 msgid ""
 "Offline AI: translate selected text to my language (NVDA's language unless "
 "changed in settings)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3936
+#: addon/globalPlugins/offlineAI/__init__.py:3935
 msgid ""
 "Offline AI: translate selected text to my second language (English unless "
 "changed in settings)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3942
+#: addon/globalPlugins/offlineAI/__init__.py:3941
 msgid "Offline AI: translate selected text to a language chosen from a list"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3958
+#: addon/globalPlugins/offlineAI/__init__.py:3957
 msgid "Offline AI: summarize selected text"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3962
+#: addon/globalPlugins/offlineAI/__init__.py:3961
 msgid "Offline AI: proofread and fix grammar of selected text"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3966
+#: addon/globalPlugins/offlineAI/__init__.py:3965
 msgid "Offline AI: explain selected code or error"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:3975
+#: addon/globalPlugins/offlineAI/__init__.py:3974
 #, python-brace-format
 msgid "Custom action {n} is not defined. Add it in Settings."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:4013
+#: addon/globalPlugins/offlineAI/__init__.py:4012
 msgid "Offline AI: toggle live dictation (speak, then insert text)"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:4023
+#: addon/globalPlugins/offlineAI/__init__.py:4022
 msgid ""
 "No Whisper model found. Open the Transcribe speech window and download one "
 "first."
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:4030
+#: addon/globalPlugins/offlineAI/__init__.py:4029
 msgid "Offline AI: cancel live dictation without inserting text"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/__init__.py:4037
+#: addon/globalPlugins/offlineAI/__init__.py:4036
 msgid "Dictation is not recording."
 msgstr ""
 
 #. Translators: input gesture description; {n} is the slot number (1-10).
-#: addon/globalPlugins/offlineAI/__init__.py:4092
+#: addon/globalPlugins/offlineAI/__init__.py:4091
 #, python-brace-format
 msgid "Offline AI: run custom quick action {n}"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/tables.py:75
-#, python-brace-format
-msgid "Column {n}"
+#. Translators: a block of program code with no language given.
+#: addon/globalPlugins/offlineAI/codeblocks.py:36
+msgid "Code block"
 msgstr ""
 
-#: addon/globalPlugins/offlineAI/tables.py:77
+#. Translators: e.g. "Python code block".
+#: addon/globalPlugins/offlineAI/codeblocks.py:50
 #, python-brace-format
-msgid "Row {n} - "
+msgid "{language} code block"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/backup.py:21
+msgid "Settings"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/backup.py:22
+msgid "Voice profiles"
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/backup.py:65
+msgid "This does not look like an Offline AI backup."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/backup.py:71
+msgid "The backup manifest is invalid or its version is not supported."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/backup.py:74
+msgid "The file is not a valid zip archive."
+msgstr ""
+
+#: addon/globalPlugins/offlineAI/audio_decode.py:82
+#, python-brace-format
+msgid ""
+"This format ({e}) needs FFmpeg, which was not found. MP3, FLAC, OGG and WAV "
+"work without it."
 msgstr ""
 
 #: addon/globalPlugins/offlineAI/dictation.py:97
@@ -2170,388 +2572,6 @@ msgstr ""
 msgid "Dictated text inserted."
 msgstr ""
 
-#. Translators: short descriptions of Whisper speech recognition models.
-#: addon/globalPlugins/offlineAI/whisper_ui.py:27
-msgid "fastest, lower accuracy"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:28
-msgid "fast"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:29
-msgid "balanced, small download"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:30
-msgid "balanced"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:31
-msgid "recommended: accurate and quick"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:32
-msgid "accurate"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:33
-msgid "accurate, faster than Large"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:34
-msgid "most accurate, slowest"
-msgstr ""
-
-#. Translators: file type filter in the "open audio" dialog.
-#: addon/globalPlugins/offlineAI/whisper_ui.py:41
-msgid "Media files"
-msgstr ""
-
-#. Translators: title of the speech-to-text window.
-#: addon/globalPlugins/offlineAI/whisper_ui.py:62
-msgid "Offline AI - Transcribe speech"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:79
-msgid "&Whisper model:"
-msgstr ""
-
-#. Translators: the language spoken in the recording.
-#: addon/globalPlugins/offlineAI/whisper_ui.py:88
-msgid "Spoken &language:"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:94
-msgid "Translate to &English while transcribing"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:101
-msgid "Delete &model file"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:104
-msgid "&Open audio/video file(s)..."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:107
-msgid "&Batch transcribe to files..."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:113
-msgid "No file chosen."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:116
-msgid "&Transcribe"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:120
-msgid "&Stop"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:127
-msgid "Transcr&ipt:"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:132
-msgid "Save as T&XT..."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:134
-msgid "Save as S&RT..."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:136
-msgid "Save as &VTT..."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:207
-msgid "Download the selected Whisper model first."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:247
-#, python-brace-format
-msgid ""
-"Delete the downloaded file for {n} ({s})? You can download it again later."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:275
-msgid "Audio format"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:279
-msgid "Choose one or more audio or video files"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:287
-#, python-brace-format
-msgid "File: {n}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:288
-#, python-brace-format
-msgid "Chosen {n}. Press Transcribe."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:292
-#, python-brace-format
-msgid ""
-"{n} files chosen. Press Transcribe to write a transcript file next to each "
-"one."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:302
-msgid "Choose the audio or video files to transcribe"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:307
-#, python-brace-format
-msgid "{n} files chosen for batch transcription."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:325
-msgid "Choose a file first with the Open button."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:338
-msgid "Transcribing. This can take a while."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:347
-#, python-brace-format
-msgid "The speech engine could not be loaded: {e}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:364
-msgid ""
-"FFmpeg is required for this file format. Convert it to WAV, MP3, FLAC or "
-"OGG, or install FFmpeg."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:391
-#, python-brace-format
-msgid "Transcription error: {e}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:427
-msgid ""
-"Transcription complete. Press Space or Enter in the transcript to play the "
-"audio for the current segment."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:430
-msgid "No speech was transcribed."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:458
-msgid "No audio segment here."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:471
-msgid "No audio for the selection."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:477
-msgid "Could not load the audio for playback."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:496
-msgid "Playback failed."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:508
-msgid ""
-"Each transcript is saved next to its audio file, with the same name. Choose "
-"the format:"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:510
-msgid "Batch transcription"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:511
-msgid "Text (.txt)"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:511
-msgid "SubRip subtitles (.srt)"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:511
-msgid "WebVTT subtitles (.vtt)"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:527
-#, python-brace-format
-msgid "Batch transcription started for {n} files."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:549
-#, python-brace-format
-msgid "{i} of {t}: transcribing {n}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:562
-#, python-brace-format
-msgid "Saved {o}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:565
-#, python-brace-format
-msgid "Skipped {n}: {e}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:575
-#, python-brace-format
-msgid ""
-"Batch complete. {d} of {t} files transcribed. The transcripts are saved next "
-"to the original files; details are in the transcript box."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:583
-msgid "Nothing to save yet."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:586
-msgid "Text file"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:587
-msgid "SubRip subtitles"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:588
-msgid "WebVTT subtitles"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/whisper_ui.py:591
-msgid "Save transcript"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/tts.py:161
-msgid "The text-to-speech model has not been downloaded yet."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/tts.py:163
-msgid "No text to speak."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/tts.py:201
-msgid "Speech generation timed out."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/tts.py:216
-msgid "Speech was cancelled."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/tts.py:225
-msgid "No audio was produced. See the NVDA log for details."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/tts.py:320
-msgid "Unsupported WAV sample width."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/tts.py:366
-#, python-brace-format
-msgid "Speech generation failed: {e}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/tts.py:368
-msgid "Playing."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/tts.py:454
-msgid "Nothing to read."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/tts.py:526
-#, python-brace-format
-msgid "Sentence {n} of {t}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/tts.py:534
-msgid "Finished reading."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/tts.py:538
-msgid "Paused."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/tts.py:542
-msgid "Resumed."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/catalog.py:253
-msgid "invalid repository or file name"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/catalog.py:267
-#, python-brace-format
-msgid "the download link is not available (status {s})"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/catalog.py:279
-msgid "the model entry is not valid"
-msgstr ""
-
-#. Translators: a block of program code with no language given.
-#: addon/globalPlugins/offlineAI/codeblocks.py:36
-msgid "Code block"
-msgstr ""
-
-#. Translators: e.g. "Python code block".
-#: addon/globalPlugins/offlineAI/codeblocks.py:50
-#, python-brace-format
-msgid "{language} code block"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/downloader.py:47
-#, python-brace-format
-msgid "Downloading {n}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/downloader.py:55
-msgid "&Cancel"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/downloader.py:64
-msgid "Cancelling..."
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/downloader.py:72
-#, python-brace-format
-msgid ""
-"{pct:.0f} percent - {done} of {total}\n"
-"Speed: {speed}/s\n"
-"Elapsed: {el}   Remaining: {rem}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/downloader.py:80
-#, python-brace-format
-msgid ""
-"{done} downloaded\n"
-"Speed: {speed}/s\n"
-"Elapsed: {el}"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/downloader.py:192
-#, python-brace-format
-msgid "{p} percent"
-msgstr ""
-
-#. The connection dropped. Keep the partial file for resuming.
-#: addon/globalPlugins/offlineAI/downloader.py:195
-#, python-brace-format
-msgid ""
-"the connection was interrupted at {p} percent; press Download again to resume"
-msgstr ""
-
-#: addon/globalPlugins/offlineAI/downloader.py:206
-msgid "Cancelled."
-msgstr ""
-
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-on store
 #: buildVars.py:23
@@ -2573,5 +2593,8 @@ msgstr ""
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:32
-msgid "First official release."
+msgid ""
+"Arabic interface and documentation. Fixed long-text punctuation loss, safe "
+"model cleanup and deletion, and backup validation. Updated build "
+"dependencies."
 msgstr ""
