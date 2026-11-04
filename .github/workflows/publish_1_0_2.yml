@@ -1,0 +1,48 @@
+name: Publish Offline AI 1.0.2
+on:
+  push:
+    branches: [publish-v1.0.2]
+    paths: [.github/workflows/publish_1_0_2.yml]
+permissions:
+  contents: write
+concurrency:
+  group: publish-offlineai-v1.0.2
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: f39b97c3c5f369beabf4589731964e97a37e0d75
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y gettext
+          pip install -r requirements-build.txt
+      - name: Validate and build the merged source
+        run: |
+          python -m unittest discover -s tests -v
+          scons
+          msgfmt --check --check-format -o /tmp/offlineAI-ar.mo addon/locale/ar/LC_MESSAGES/nvda.po
+          python tests/check_translation.py
+          test -f offlineAI-1.0.2.nvda-addon
+          sha256sum offlineAI-1.0.2.nvda-addon offlineAI.pot > SHA256SUMS.txt
+      - name: Publish release and installer
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: v1.0.2
+          target_commitish: f39b97c3c5f369beabf4589731964e97a37e0d75
+          name: Offline AI 1.0.2
+          body_path: changelog.md
+          draft: false
+          prerelease: false
+          make_latest: true
+          fail_on_unmatched_files: true
+          files: |
+            offlineAI-1.0.2.nvda-addon
+            offlineAI.pot
+            SHA256SUMS.txt
