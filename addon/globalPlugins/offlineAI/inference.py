@@ -11,7 +11,10 @@ import sys
 import time
 import threading
 
+import addonHandler
 from logHandler import log
+
+addonHandler.initTranslation()
 
 ADDON_DIR = os.path.dirname(__file__)
 LIB_DIR = os.path.join(ADDON_DIR, "lib")
@@ -24,6 +27,7 @@ _loaded_path = None
 _last_used = 0.0
 _pinned = False               # True while the chat window is open
 _watchdog = None
+_unload_pending = False
 
 STOP_TOKENS = ["<|im_end|>", "<|eot_id|>", "<|end_of_text|>", "<|end|>",
                "<end_of_turn>", "</s>", "<|user|>"]
@@ -40,10 +44,15 @@ def try_acquire_busy():
 
 
 def release_busy():
-	try:
-		_busy.release()
-	except RuntimeError:
-		pass
+	global _unload_pending
+	with _lock:
+		if _unload_pending:
+			_unload_locked()
+			_unload_pending = False
+		try:
+			_busy.release()
+		except RuntimeError:
+			pass
 
 
 def is_busy():
@@ -168,10 +177,13 @@ def truncate_to_tokens(text, max_tokens):
 	# Shrink proportionally, then tighten; a handful of rounds always suffices.
 	for _round in range(8):
 		ratio = max_tokens / float(max(1, n))
-		keep = keep[:max(1, int(len(keep) * ratio * 0.97))]
+		keep = keep[:min(len(keep) - 1, max(0, int(len(keep) * ratio * 0.97)))]
 		n = count_tokens(keep)
 		if n <= max_tokens:
 			break
+	# A tokenizer can assign several tokens to even one character.
+	while keep and count_tokens(keep) > max_tokens:
+		keep = keep[:-1]
 	return keep, True
 
 
@@ -355,7 +367,7 @@ def generate(fmt, userText, system, settings, think_mode="hide",
 		return None, str(e)
 	try:
 		from . import think_filter
-		tf = think_filter.ThinkFilter(mode=think_mode)
+		tf = think_filter.ThinkFilter(mode=think_mode, cue_text=_("[Reasoning done] "))
 		raw = tf.feed(raw) + tf.flush()
 	except Exception:
 		pass
@@ -378,11 +390,13 @@ def split_for_context(text, instruction, settings):
 		if count_tokens(para) <= per:
 			units.append(para)
 			continue
-		for sent in re.findall(
-				r"[^.!?\u061f\u06d4\u3002\uff01\uff1f\u0964\n]+"
-				r"[.!?\u061f\u06d4\u3002\uff01\uff1f\u0964\n]*\s*", para) or [para]:
+		# Capture separators too: findall with a required non-punctuation
+		# prefix silently discarded leading punctuation and punctuation-only text.
+		for sent in re.split(r"([.!?\u061f\u06d4\u3002\uff01\uff1f\u0964\n]+\s*)", para):
 			while count_tokens(sent) > per:
 				head, _cut = truncate_to_tokens(sent, per)
+				if not head:
+					raise ContextOverflow("A character exceeds the available token budget")
 				units.append(head)
 				sent = sent[len(head):]
 			if sent:
@@ -395,9 +409,9 @@ def split_for_context(text, instruction, settings):
 			buf, used = "", 0
 		buf += u
 		used += c
-	if buf.strip():
+	if buf:
 		chunks.append(buf)
-	return [c for c in chunks if c.strip()], per
+	return chunks, per
 
 
 def benchmark(n_tokens=30):
@@ -438,12 +452,40 @@ def _unload_locked():
 
 
 def unload(force=False):
-	"""Free the model. Unless forced, does nothing while a generation runs."""
-	if not force and is_busy():
-		return False
+	"""Free an idle model; forced cleanup waits for the current request to exit.
+
+	Hold the busy lock throughout cleanup so a new generation cannot start
+	between the busy check and closing the native model.
+	"""
+	global _unload_pending
 	with _lock:
-		_unload_locked()
+		if not _busy.acquire(blocking=False):
+			if force:
+				_unload_pending = True
+			return False
+		try:
+			_unload_locked()
+			_unload_pending = False
+		finally:
+			_busy.release()
 	return True
+
+
+def delete_model_file(path):
+	"""Delete a model without closing a native engine that is still in use.
+
+	Return False while busy; propagate filesystem errors to the caller.
+	"""
+	if not _busy.acquire(blocking=False):
+		return False
+	try:
+		with _lock:
+			if _loaded_path and os.path.normcase(os.path.abspath(_loaded_path)) == os.path.normcase(os.path.abspath(path)):
+				_unload_locked()
+			os.remove(path)
+		return True
+	finally:
+		release_busy()
 
 
 def set_pinned(flag):

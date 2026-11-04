@@ -650,7 +650,7 @@ class SettingsDialog(wx.Dialog):
 		if err:
 			ui.message(_("Not a valid backup: {e}").format(e=err))
 			return
-		contents = ", ".join(manifest.get("contents", []))
+		contents = backup.describe_contents(manifest.get("contents", []))
 		if gui.messageBox(
 			_("This backup was created on {d} and contains: {c}.\n\n"
 			  "Existing data will be overwritten. Continue?").format(
@@ -665,7 +665,7 @@ class SettingsDialog(wx.Dialog):
 			return
 		gui.messageBox(
 			_("Restored: {items}.").format(
-				items=", ".join(restored) or _("nothing")),
+				items=backup.describe_contents(restored) or _("nothing")),
 			_("Import backup"), wx.OK | wx.ICON_INFORMATION, self)
 		# Close without saving: pressing Save here would write this dialog's old
 		# values over the settings that were just restored.
@@ -1447,11 +1447,10 @@ class OfflineAIDialog(wx.Dialog):
 				  "You can download it again later.").format(
 					n=m["name"], s=m.get("size", "?")),
 				_("Delete model"), wx.YES_NO | wx.ICON_QUESTION, self) == wx.YES:
-				if inference.loaded_path() and os.path.normcase(
-						inference.loaded_path()) == os.path.normcase(path):
-					inference.unload(force=True)
 				try:
-					os.remove(path)
+					if not inference.delete_model_file(path):
+						ui.message(_("Offline AI is busy. Please wait."))
+						return
 					ui.message(_("Model file deleted."))
 				except OSError as e:
 					ui.message(_("Could not delete the file: {e}").format(e=str(e)))

@@ -17,6 +17,13 @@ MANIFEST_NAME = "offlineAI_backup.json"
 BACKUP_VERSION = 1
 
 
+def describe_contents(items):
+	labels = {"config": _("Settings"), "history": _("Chat history"),
+	          "voice_profiles": _("Voice profiles")}
+	return ", ".join(labels.get(item, item) for item in items)
+
+
+
 def create_backup(dest_zip, config_json_path, history_path, voice_profiles_dir):
 	"""Write a backup zip containing config, chat history, and voice samples.
 	Returns (ok, err)."""
@@ -57,6 +64,11 @@ def inspect_backup(src_zip):
 			if MANIFEST_NAME not in names:
 				return None, _("This does not look like an Offline AI backup.")
 			manifest = json.loads(z.read(MANIFEST_NAME).decode("utf-8"))
+		if (not isinstance(manifest, dict)
+				or manifest.get("version") != BACKUP_VERSION
+				or not isinstance(manifest.get("contents"), list)
+				or not all(isinstance(item, str) for item in manifest["contents"])):
+			return None, _("The backup manifest is invalid or its version is not supported.")
 		return manifest, None
 	except zipfile.BadZipFile:
 		return None, _("The file is not a valid zip archive.")
@@ -130,6 +142,7 @@ def restore_backup(src_zip, config_json_path, history_path, voice_profiles_dir,
 				if overwrite or not os.path.isfile(config_json_path):
 					data = z.read("config/offlineAI_config.json")
 					data = _relocate(data, config_json_path, voice_profiles_dir)
+					os.makedirs(os.path.dirname(os.path.abspath(config_json_path)), exist_ok=True)
 					tmp = config_json_path + ".tmp"
 					with open(tmp, "wb") as f:
 						f.write(data)
